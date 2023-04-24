@@ -1,0 +1,108 @@
+:root {
+    --teal:teal;
+    --turquoise: rgb(9, 170, 170);
+    --grey: rgb(131, 130, 130);
+    --light-grey: rgb(199, 199, 199);
+}
+*{
+padding: 0;
+margin: 0;
+}
+
+body {
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--light-grey);
+    display: block;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height:150px;
+    width: 100%;
+    background-color: var(--teal);
+
+}
+
+h1 {
+    width: 90%;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+nav {
+    width:10%;
+    background-color: var(--turquoise);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nav-header {
+    font-size: 32px;
+    text-decoration: underline;
+    padding-left:20px;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    padding-left:20px;
+    text-align: right;
+}
+
+.nav-list {
+    width:max-content;
+    text-align: right;
+}
+
+main{
+    background-color: var(--light-grey);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height:100vw;
+    width: 100%;
+}
+
+
+.text-left{
+    margin:10px 0 10px 100px;
+    border: 5px solid var(--teal);
+    border-radius: 5px;
+    width: 20%;
+    height: max-content;
+    background-color: var(--grey);
+    line-height: 1.5;
+}
+
+.aside-header {
+    background-color: var(--turquoise);
+    margin:0;
+    border-bottom: 5px solid var(--teal);
+    padding:10px;
+}
+
+.aside-text{
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+}
+
+#contact-ul {
+    text-align: left;
+    line-height: 1.5;
+}
+a {color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-decoration: none;
+}
