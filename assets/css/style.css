@@ -40,7 +40,7 @@ h1 {
     
 }
 nav {
-    width:10%;
+    width: 10%;
     background-color: var(--turquoise);
     display:flex;
     flex-direction: column;
@@ -50,13 +50,13 @@ nav {
 #nav-header {
     font-size: 32px;
     text-decoration: underline;
-    padding-left:2px;
+    padding-left:5px;
 }
 
 ul {
     list-style: none;
     font-size: 20px;
-    padding-left:2px;
+    padding-left:5px;
     text-align: right;
 }
 
@@ -70,7 +70,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    height:100vw;
+    height:100%;
     width: 100%;
 }
 
@@ -79,7 +79,7 @@ main{
     margin:10px 0 10px 100px;
     border: 5px solid var(--teal);
     border-radius: 5px;
-    width: 20%;
+    width: 50%;
     height: max-content;
     background-color: var(--grey);
     line-height: 1.5;
@@ -112,10 +112,10 @@ main{
 
 .portfolio-item {
     border: var(--border);
+    border-radius: 12px;
     margin: 30px 2.5% 10px 2.5%;
-    align-content: center;
-    width: 45%;
-    height: 14vw;
+    width: 250px;
+    height: 260px;
     background-image: url("../images/Placeholder.PNG");
     background-size:contain;
     background-blend-mode:luminosity;
@@ -125,42 +125,55 @@ main{
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 h3 {
     background-color: var(--turquoise);
-    margin:-20px;
-    border: 5px solid var(--teal);
+    margin:0px;
+    border-right: 5px solid var(--teal);
+    border-bottom: 5px solid var(--teal);
     padding:10px;
-    border-radius: 5px;
+    border-radius: 6px 0 12px 0;
     width: 100px;
 }
 
-.image-link {
-    width: 100%;
-    height: 100%;
-}
-.link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
 #first-port-item {
-    width: 90%;
-    height: 28vw;
+    width: 94%;
+    height: 500px;
     background-image: url("../images/Maki-Image.PNG");
     background-size: cover;
+}
+
+#horiseon-refactor{
+    background-image: url("../images/Horiseon.PNG");
+    background-size:cover;
+}
+
+#contact {
+    width: 300px;
 }
 
 #contact-ul {
     text-align: left;
     line-height: 1.5;
 }
+
 a {color:white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 24px;
+    background-color: var(--teal);
+    height: 50px;
+    position:relative;
+    bottom:0;
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 1350px) {
