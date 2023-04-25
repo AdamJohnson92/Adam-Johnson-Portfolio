@@ -3,6 +3,7 @@
     --turquoise: rgb(9, 170, 170);
     --grey: rgb(131, 130, 130);
     --light-grey: rgb(199, 199, 199);
+    --border: 5px solid var(--teal);
 }
 *{
 padding: 0;
@@ -49,13 +50,13 @@ nav {
 #nav-header {
     font-size: 32px;
     text-decoration: underline;
-    padding-left:20px;
+    padding-left:2px;
 }
 
 ul {
     list-style: none;
     font-size: 20px;
-    padding-left:20px;
+    padding-left:2px;
     text-align: right;
 }
 
@@ -84,7 +85,7 @@ main{
     line-height: 1.5;
 }
 
-.aside-header {
+.section-header {
     background-color: var(--turquoise);
     margin:0;
     border-bottom: 5px solid var(--teal);
@@ -98,6 +99,61 @@ main{
     padding:10px;
 }
 
+.portfolio {
+    margin-left: 100px;
+    width: 50%;
+    border: var(--border);
+    border-radius: 5px;
+    background-color: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.portfolio-item {
+    border: var(--border);
+    margin: 30px 2.5% 10px 2.5%;
+    align-content: center;
+    width: 45%;
+    height: 14vw;
+    background-image: url("../images/Placeholder.PNG");
+    background-size:contain;
+    background-blend-mode:luminosity;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    background-color: var(--turquoise);
+    margin:-20px;
+    border: 5px solid var(--teal);
+    padding:10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.image-link {
+    width: 100%;
+    height: 100%;
+}
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#first-port-item {
+    width: 90%;
+    height: 28vw;
+    background-image: url("../images/Maki-Image.PNG");
+    background-size: cover;
+}
+
 #contact-ul {
     text-align: left;
     line-height: 1.5;
@@ -105,4 +161,42 @@ main{
 a {color:white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 text-decoration: none;
+}
+
+@media screen and (max-width: 1350px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #nav-header {
+        font-size: 20px;
+        padding-left: 2px;
+    }
+    
+    nav ul {
+        padding-left: 2px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+}
+@media screen and (max-width: 720px) {
+    h1 {
+        font-size: 32px;
+        width: 80%;
+    }
+    nav {
+        width: 20%;
+    }
+
+    #nav-header {
+        font-size: 16px;
+        padding-left: 2px;
+    }
+    
+    nav ul {
+        padding-left: 2px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
 }
