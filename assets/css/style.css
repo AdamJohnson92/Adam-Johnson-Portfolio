@@ -5,6 +5,7 @@
     --light-grey: rgb(199, 199, 199);
     --border: 5px solid var(--teal);
 }
+
 *{
 padding: 0;
 margin: 0;
@@ -14,7 +15,6 @@ body {
     color:white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--light-grey);
-    display: block;
 }
 
 header {
@@ -32,13 +32,11 @@ h1 {
     width: 90%;
     font-size: 60px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-
-    
+    text-align: center; 
 }
+
 nav {
     width: 10%;
     background-color: var(--turquoise);
@@ -60,7 +58,7 @@ ul {
     text-align: right;
 }
 
-.nav-list {
+li {
     width:max-content;
     text-align: right;
 }
@@ -74,10 +72,9 @@ main{
     width: 100%;
 }
 
-
 .text-left{
     margin:20px 0 20px 100px;
-    border: 5px solid var(--teal);
+    border: var(--border);
     border-radius: 5px;
     width: 75%;
     height: max-content;
@@ -88,18 +85,9 @@ main{
 .section-header {
     background-color: var(--turquoise);
     margin:0;
-    border-bottom: 5px solid var(--teal);
+    border-bottom: var(--border);
     padding:10px;
     padding-right: 0;
-}
-
-.aside-text{
-    height: max-content;
-    min-height: 260px;
-    display: flex;
-    flex-wrap: wrap;
-    padding:10px;
-    font-size: 20px;
 }
 
 #profile-picture {
@@ -111,12 +99,16 @@ main{
     margin: 10px 10px 10px 0;
 }
 
-.portfolio {
-    margin-left: 100px;
-    width: 75%;
-    border: var(--border);
-    border-radius: 5px;
-    background-color: var(--grey);
+p {
+    height: max-content;
+    min-height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px 10px 10px 20px;
+    font-size: 20px;
+}
+
+#portfolio {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -130,9 +122,14 @@ main{
     height: 260px;
     background-image: url("../images/Placeholder.PNG");
     background-size:contain;
-    background-blend-mode:luminosity;
 }
 
+#first-port-item {
+    width: 94%;
+    height: 600px;
+    background-image: url("../images/Maki-Image.PNG");
+    background-size: cover;
+}
 
 .link {
     position: absolute;
@@ -145,6 +142,16 @@ main{
     height: 600px;
 }
 
+h3 {
+    background-color: var(--turquoise);
+    margin:0px;
+    border-right: var(--border);
+    border-bottom: var(--border);
+    padding:10px;
+    border-radius: 6px 0 12px 0;
+    width: 100px;
+}
+
 .container {
     width: 100%;
     height: auto;
@@ -152,23 +159,6 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-}
-
-h3 {
-    background-color: var(--turquoise);
-    margin:0px;
-    border-right: 5px solid var(--teal);
-    border-bottom: 5px solid var(--teal);
-    padding:10px;
-    border-radius: 6px 0 12px 0;
-    width: 100px;
-}
-
-#first-port-item {
-    width: 94%;
-    height: 600px;
-    background-image: url("../images/Maki-Image.PNG");
-    background-size: cover;
 }
 
 #horiseon-refactor{
@@ -188,7 +178,7 @@ h3 {
 
 a {color:white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-text-decoration: none;
+    text-decoration: none;
 }
 
 footer {
@@ -199,56 +189,48 @@ footer {
     position:relative;
     bottom:0;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
 }
 
 @media screen and (max-width: 1350px) {
     h1 {
         font-size: 50px;
     }
-
     #nav-header {
         font-size: 20px;
         padding-left: 2px;
     }
-    
     nav ul {
         padding-left: 2px;
         font-size: 16px;
         line-height: 1.5;
     }
-
     #first-port-item {
         height: 500px; 
-    }
-    .link {
-        height: 500px;
+        width:93%;
     }
 }
 
 @media screen and (max-width: 720px) {
     h1 {
-        font-size: 24px;
+        font-size: 32px;
         width: 80%;
     }
     nav {
         width: 20%;
     }
-
     #nav-header {
         font-size: 16px;
-        padding-left: 2px;
     }
-    
     nav ul {
-        padding-left: 2px;
         font-size: 12px;
-        line-height: 1.5;
     }
-
     .text-left {
         margin:20px 0 20px 50px;
     }
-
     #profile-picture {
         width: 150px;
         height: 200px;
@@ -258,8 +240,6 @@ footer {
     }
     #first-port-item {
         height: 350px;
-    }
-    .link {
-        height: 350px;
+        width: 92%;
     }
 }
