@@ -30,7 +30,7 @@ header {
 
 h1 {
     width: 90%;
-    font-size: 50px;
+    font-size: 60px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -76,10 +76,10 @@ main{
 
 
 .text-left{
-    margin:10px 0 10px 100px;
+    margin:20px 0 20px 100px;
     border: 5px solid var(--teal);
     border-radius: 5px;
-    width: 50%;
+    width: 75%;
     height: max-content;
     background-color: var(--grey);
     line-height: 1.5;
@@ -90,6 +90,8 @@ main{
     margin:0;
     border-bottom: 5px solid var(--teal);
     padding:10px;
+    padding-right: 0;
+git
 }
 
 .aside-text{
@@ -97,11 +99,12 @@ main{
     display: flex;
     flex-wrap: wrap;
     padding:10px;
+    font-size: 20px;
 }
 
 .portfolio {
     margin-left: 100px;
-    width: 50%;
+    width: 75%;
     border: var(--border);
     border-radius: 5px;
     background-color: var(--grey);
@@ -142,7 +145,7 @@ h3 {
 
 #first-port-item {
     width: 94%;
-    height: 500px;
+    height: 600px;
     background-image: url("../images/Maki-Image.PNG");
     background-size: cover;
 }
@@ -153,12 +156,13 @@ h3 {
 }
 
 #contact {
-    width: 300px;
+    width: 350px;
 }
 
 #contact-ul {
     text-align: left;
     line-height: 1.5;
+    padding: 10px;
 }
 
 a {color:white;
@@ -178,7 +182,7 @@ footer {
 
 @media screen and (max-width: 1350px) {
     h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     #nav-header {
@@ -191,11 +195,16 @@ footer {
         font-size: 16px;
         line-height: 1.5;
     }
-    
+
+    #first-port-item {
+        height: 500px; 
+    }
+
 }
+
 @media screen and (max-width: 720px) {
     h1 {
-        font-size: 32px;
+        font-size: 24px;
         width: 80%;
     }
     nav {
@@ -212,4 +221,15 @@ footer {
         font-size: 12px;
         line-height: 1.5;
     }
+
+    .text-left {
+        margin:20px 0 20px 50px;
+}
+
+    .portfolio {
+        margin:20px 0 20px 50px;
+    }
+    #first-port-item {
+        height: 350px;
+}
 }
