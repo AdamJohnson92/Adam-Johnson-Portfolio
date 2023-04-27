@@ -91,15 +91,22 @@ main{
     border-bottom: 5px solid var(--teal);
     padding:10px;
     padding-right: 0;
-git
 }
 
 .aside-text{
     height: max-content;
+    min-height: 250px;
     display: flex;
     flex-wrap: wrap;
     padding:10px;
     font-size: 20px;
+}
+
+#profile-picture {
+    width: 200px;
+    height: 250px;
+    float:right;
+    padding: 10px;
 }
 
 .portfolio {
@@ -224,7 +231,12 @@ footer {
 
     .text-left {
         margin:20px 0 20px 50px;
-}
+    }
+
+    #profile-picture {
+        width: 150px;
+        height: 200px;
+    }
 
     .portfolio {
         margin:20px 0 20px 50px;
