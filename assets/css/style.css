@@ -171,6 +171,11 @@ h3 {
     background-size: cover;
 }
 
+#dolly{
+    background-image: url("../images/dolly.PNG");
+    background-size: cover;
+}
+
 #contact {
     width: 350px;
 }
